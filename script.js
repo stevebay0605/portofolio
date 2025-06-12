@@ -130,12 +130,19 @@ tailwind.config = {
   window.addEventListener('scroll', animateOnScroll);
   animateOnScroll(); // Run on page load
 
-  // Initialisation de AOS
+  // Initialisation de AOS avec des paramètres optimisés pour mobile
   document.addEventListener('DOMContentLoaded', () => {
       AOS.init({
-          duration: 800,
+          duration: 600, // Réduction de la durée pour mobile
           easing: 'ease-out',
           once: true,
-          offset: 100
+          startEvent: 'DOMContentLoaded',
+          mirror: false,
+          anchorPlacement: 'top-bottom'
+      });
+
+      
+      window.addEventListener('resize', () => {
+          AOS.refresh();
       });
   });
