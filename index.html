@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel de LESSENGUI Christ Juvalin - Étudiant en Maintenance Industrielle, leader communautaire et entrepreneur social engagé pour le développement de l'Afrique">
+    <meta name="keywords" content="LESSENGUI Christ Juvalin, maintenance industrielle, ENSP, Congo, portfolio, leadership, entrepreneuriat social">
+    <meta name="author" content="LESSENGUI Christ Juvalin">
+    <title>LESSENGUI Christ Juvalin - Portfolio Professionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-slate-800 text-white py-6 px-4 text-center">
+        <h1 class="text-2xl md:text-4xl font-bold animate-fade-in">LESSENGUI Christ Juvalin</h1>
+        <p class="text-slate-300 mt-2 text-sm md:text-base animate-fade-in">Étudiant en Maintenance Industrielle | Leader Communautaire</p>
+    </header>
+
+    <!-- barre de Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-slate-800">Portfolio</div>
+                
+                <!--liens de Navigation -->
+                <div class="hidden lg:flex space-x-6">
+                    <a href="#accueil" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-home"></i>
+                        <span>Accueil</span>
+                    </a>
+                    <a href="#apropos" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-heart"></i>
+                        <span>À propos</span>
+                    </a>
+                    <a href="#parcours" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Parcours</span>
+                    </a>
+                    <a href="#competences" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-award"></i>
+                        <span>Compétences</span>
+                    </a>
+                    <a href="#projets" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projets</span>
+                    </a>
+                    <a href="#experience" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Expérience</span>
+                    </a>
+                    <a href="#langues" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-language"></i>
+                        <span>Langues</span>
+                    </a>
+                    <a href="#contact" class="nav-link flex items-center space-x-2 px-3 py-2 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Navigation  Mobile -->
+            <div id="mobile-menu" class="lg:hidden pb-4 hidden">
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="#accueil" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-home"></i>
+                        <span class="text-sm">Accueil</span>
+                    </a>
+                    <a href="#apropos" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-heart"></i>
+                        <span class="text-sm">À propos</span>
+                    </a>
+                    <a href="#parcours" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="text-sm">Parcours</span>
+                    </a>
+                    <a href="#competences" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-award"></i>
+                        <span class="text-sm">Compétences</span>
+                    </a>
+                    <a href="#projets" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-project-diagram"></i>
+                        <span class="text-sm">Projets</span>
+                    </a>
+                    <a href="#experience" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="text-sm">Expérience</span>
+                    </a>
+                    <a href="#langues" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-language"></i>
+                        <span class="text-sm">Langues</span>
+                    </a>
+                    <a href="#contact" class="mobile-nav-link flex items-center space-x-2 px-3 py-3 rounded-lg transition-colors text-slate-600 hover:text-blue-500 hover:bg-blue-50">
+                        <i class="fas fa-phone"></i>
+                        <span class="text-sm">Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!--Section banniere -->
+        <section id="accueil" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-slate-100 px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="mb-8 animate-slide-up">
+                    <div class="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-full overflow-hidden shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-300">
+                        <img src="Images/Ma photo.png" 
+                             alt="Christ Juvalin LESSENGUI" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-slate-800 mb-6 animate-fade-in">
+                    Bienvenue sur mon portfolio !
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto animate-fade-in">
+                    Entre ingénierie, engagement communautaire et ambition pour une Afrique meilleure et prospère,
+                    je vous invite à découvrir mon parcours, mes projets et ma vision.
+                </p>
+                <a href="#apropos" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 animate-bounce-gentle">
+                    Découvrir mon parcours
+                </a>
+            </div>
+        </section>
+
+        <!--Section a propos -->
+        <section id="apropos" class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12" data-aos="fade-down">À propos de moi</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6" data-aos="fade-right" data-aos-delay="200">
+                        <p class="text-lg text-slate-600 leading-relaxed">
+                            Je suis <strong>Christ Juvalin LESSENGUI</strong>, de nationalité congolaise, né le 28 avril 2003 à Divenié. 
+                            Étudiant en <strong>Maintenance Industrielle</strong> à l'École Nationale Supérieure Polytechnique (ENSP) 
+                            de l'Université Marien Ngouabi à Brazzaville.
+                        </p>
+                        <p class="text-lg text-slate-600 leading-relaxed">
+                            Issu d'un parcours scientifique rigoureux, je combine mes expertises techniques et mon sens de l'engagement. 
+                            Chaque étape de mon parcours a été guidée par une volonté : utiliser le savoir pour transformer 
+                            concrètement mon environnement.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-left" data-aos-delay="400">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                            <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>
+                            Ma vision
+                        </h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Je rêve d'une jeunesse africaine formée, engagée et actrice du changement. Une jeunesse qui transforme 
+                            les défis en opportunités, en s'appuyant sur la science, la solidarité et l'innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- parcours academique -->
+        <section id="parcours" class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">Parcours académique</h2>
+                <div class="space-y-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-calendar-alt text-blue-500 text-xl"></i>
+                            <span class="text-lg font-semibold text-blue-600 min-w-[100px]">2024-2025</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-800">Licence 3 de Maintenance Industrielle</h3>
+                            <p class="text-slate-600">ENSP - Université Marien Ngouabi</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-calendar-alt text-blue-500 text-xl"></i>
+                            <span class="text-lg font-semibold text-blue-600 min-w-[100px]">2023-2024</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-800">Licence 2 de Maintenance Industrielle</h3>
+                            <p class="text-slate-600">ENSP - Université Marien Ngouabi</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-calendar-alt text-blue-500 text-xl"></i>
+                            <span class="text-lg font-semibold text-blue-600 min-w-[100px]">2022-2023</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-800">Licence 1 de Maintenance Industrielle</h3>
+                            <p class="text-slate-600">ENSP - Université Marien Ngouabi</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-calendar-alt text-blue-500 text-xl"></i>
+                            <span class="text-lg font-semibold text-blue-600 min-w-[100px]">2020-2021</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-800">Baccalauréat scientifique série C</h3>
+                            <p class="text-slate-600">Lycée de Nkayi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section competences -->
+        <section id="competences" class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">Compétences</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="flip-left" data-aos-delay="0">
+                        <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
+                            <i class="fas fa-cogs text-blue-500 mr-3 text-2xl"></i>
+                            Techniques
+                        </h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Maintenance préventive et corrective</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Hydraulique et instrumentation</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>HSE (Hygiène, Sécurité, Environnement)</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Logiciels techniques (GMAO, RDM6)</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Développement web full-stack</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="flip-left" data-aos-delay="200">
+                        <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
+                            <i class="fas fa-exchange-alt text-green-500 mr-3 text-2xl"></i>
+                            Transférables
+                        </h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Management de projets</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Analyse et résolution de problèmes</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Rédaction technique</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Gestion budgétaire</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Organisation d'événements</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="flip-left" data-aos-delay="400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
+                            <i class="fas fa-users text-red-500 mr-3 text-2xl"></i>
+                            Interpersonnelles
+                        </h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Leadership et motivation</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Travail en équipe</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Communication efficace</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Adaptabilité</li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>Résolution de conflits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section project  -->
+        <section id="projets" class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">Mes Projets</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in-up" data-aos-delay="0">
+                        <img src="Images/IMG-20240930-WA0030.jpg" 
+                             alt="Plan de Maintenance Préventive" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-blue-500 font-semibold">Maintenance industrielle</span>
+                            <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">Plan de Maintenance Préventive</h3>
+                            <p class="text-sm text-slate-500 mb-3">Avril – Juin 2023</p>
+                            <p class="text-slate-600 leading-relaxed">Conception d'un cahier des charges d'entretien et mise en œuvre des méthodes de CND.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in-up" data-aos-delay="200">
+                        <img src="Images/beneficiaire.jpg" 
+                             alt="Distribution de Kits Scolaires" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-blue-500 font-semibold">Humanitaire / Éducation</span>
+                            <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">Distribution de Kits Scolaires</h3>
+                            <p class="text-sm text-slate-500 mb-3">Septembre 2024</p>
+                            <p class="text-slate-600 leading-relaxed">Coordination de la distribution de kits scolaires avec ONG-BK pour plus de 200 enfants.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in-up" data-aos-delay="400">
+                        <img src="Images/UMNG.jpg" 
+                             alt="Programme de Soutien Scolaire" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-blue-500 font-semibold">Éducation</span>
+                            <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">Programme de Soutien Scolaire</h3>
+                            <p class="text-sm text-slate-500 mb-3">Été 2023 – en cours</p>
+                            <p class="text-slate-600 leading-relaxed">Mise en place de cours de vacances gratuits pour les élèves en difficulté.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in-up" data-aos-delay="600">
+                        <img src="Images/IMG-20241001-WA0188.jpg" 
+                             alt="Formation en Maintenance" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-blue-500 font-semibold">Formation technique</span>
+                            <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">Formation en Maintenance</h3>
+                            <p class="text-sm text-slate-500 mb-3">Janvier – Février 2024</p>
+                            <p class="text-slate-600 leading-relaxed">Formation pratique sur la réparation et l'entretien des équipements industriels.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in-up" data-aos-delay="800">
+                        <img src="Images/Assises en salle.JPG" 
+                             alt="Les Assises de Divenié" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-blue-500 font-semibold">Leadership communautaire</span>
+                            <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">Les Assises de Divenié</h3>
+                            <p class="text-sm text-slate-500 mb-3">Août 2024</p>
+                            <p class="text-slate-600 leading-relaxed">Organisation et animation des assises pour le développement local.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in-up" data-aos-delay="1000">
+                        <img src="Images/en faveur de la jeunesse.jpg" 
+                             alt="Initiative pour la Jeunesse" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-blue-500 font-semibold">Développement local</span>
+                            <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">Initiative pour la Jeunesse</h3>
+                            <p class="text-sm text-slate-500 mb-3">2024 – en cours</p>
+                            <p class="text-slate-600 leading-relaxed">Programme de formation et d'accompagnement des jeunes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--section experience -->
+        <section id="experience" class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">Expérience professionnelle</h2>
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="0">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 flex items-center">
+                                <i class="fas fa-briefcase text-blue-500 mr-3"></i>
+                                Travailleur manœuvre
+                            </h3>
+                            <span class="text-blue-500 font-semibold">2020-2021</span>
+                        </div>
+                        <p class="text-slate-600 font-medium mb-2">SCAC à Nkayi</p>
+                        <p class="text-slate-600">Expérience de terrain dans le secteur industriel</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 flex items-center">
+                                <i class="fas fa-briefcase text-blue-500 mr-3"></i>
+                                Stagiaire en maintenance
+                            </h3>
+                            <span class="text-blue-500 font-semibold">Sept-Nov 2023</span>
+                        </div>
+                        <p class="text-slate-600 font-medium mb-2">Yan Garage</p>
+                        <p class="text-slate-600">Réparation de blocs moteurs, surfaçage de culasses, entretien des équipements</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 flex items-center">
+                                <i class="fas fa-briefcase text-blue-500 mr-3"></i>
+                                Technicien de réparation
+                            </h3>
+                            <span class="text-blue-500 font-semibold">Avr-Juin 2024</span>
+                        </div>
+                        <p class="text-slate-600 font-medium mb-2">Yan Garage</p>
+                        <p class="text-slate-600">Stage en alternance - Entretien des machines-outils</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section langues-->
+        <section id="langues" class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">Langues</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="text-4xl mb-4">🇫🇷</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Français</h3>
+                        <p class="text-slate-600 mb-4">Excellent</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-4xl mb-4">🇺🇸</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Anglais</h3>
+                        <p class="text-slate-600 mb-4">Moyen</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="text-4xl mb-4">🇷🇺</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Russe</h3>
+                        <p class="text-slate-600 mb-4">Débutant</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="text-4xl mb-4">🇨🇩</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Lingala</h3>
+                        <p class="text-slate-600 mb-4">Nationale</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="text-4xl mb-4">🇨🇬</div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Kituba</h3>
+                        <p class="text-slate-600 mb-4">Nationale</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 bg-slate-800 text-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact</h2>
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Téléphone</h3>
+                        <p class="text-slate-300">+242065337815</p>
+                        <p class="text-slate-300">+242053309188</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-green-600 transition-colors duration-300">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Email</h3>
+                        <p class="text-slate-300">christlessengui01@gmail.com</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-red-600 transition-colors duration-300">
+                            <i class="fas fa-map-marker-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Localisation</h3>
+                        <p class="text-slate-300">Brazzaville, République du Congo</p>
+                        <p class="text-slate-300">ENSP - Université Marien Ngouabi</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Formulaire -->
+                <div class="max-w-2xl mx-auto">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Votre nom" 
+                                   class="w-full px-4 py-3 rounded-lg bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:border-blue-500 focus:outline-none transition-colors duration-300">
+                            <input type="email" placeholder="Votre email" 
+                                   class="w-full px-4 py-3 rounded-lg bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:border-blue-500 focus:outline-none transition-colors duration-300">
+                        </div>
+                        <input type="text" placeholder="Objet du message" 
+                               class="w-full px-4 py-3 rounded-lg bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:border-blue-500 focus:outline-none transition-colors duration-300">
+                        <textarea rows="6" placeholder="Votre message" 
+                                  class="w-full px-4 py-3 rounded-lg bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:border-blue-500 focus:outline-none resize-none transition-colors duration-300"></textarea>
+                        <button type="submit" 
+                                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-slate-400">
+                &copy; 2025 LESSENGUI Christ Juvalin - Portfolio Professionnel | Tous droits réservés
+            </p>
+        </div>
+    </footer>
+
+  
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50 opacity-0 invisible hover:scale-110">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
